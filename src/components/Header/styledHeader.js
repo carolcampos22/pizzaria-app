@@ -15,6 +15,18 @@ export const HeaderContainer = styled.header`
         font-size: 15rem;
         font-family: "Nanum Pen Script", cursive;
     }
+
+    @media(max-width: 1270px){
+        h1{
+            font-size: 10rem;
+        }
+    }
+
+    @media(max-width: 870px){
+        h1{
+            font-size: 5rem;
+        }
+    }
 `
 
 export const Image = styled.img`

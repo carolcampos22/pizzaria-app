@@ -6,7 +6,7 @@ export const Header = () => {
         <HeaderContainer>
             <h1 className="text-8xl font-bold">P</h1>
             <Image src={logo} />
-            <h1 className="text-8xl font-bold">izzaPalooza</h1>
+            <h1 className="text-8xl font-bold">zzaPalooza</h1>
         </HeaderContainer>
     )
 }
