@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import img from "../../assets/pizza-1.png"
+import img from "../../assets/slice-of-pizza.png"
 
 export const LoginPageContainer = styled.div`
     display: flex;
