@@ -5,7 +5,7 @@ export const HeaderContainer = styled.header`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: orange;
+    background-color: #f97316;
     background-image: url(${img});
     background-repeat: no-repeat;
     background-position: center;
