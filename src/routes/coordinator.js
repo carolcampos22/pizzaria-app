@@ -17,3 +17,4 @@ export const goToMenuPage = (navigator) => {
 export const goToListOfOptionsPage = (navigator) => {
     navigator('/listofoptions')
 }
+
