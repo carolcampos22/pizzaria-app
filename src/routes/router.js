@@ -4,6 +4,7 @@ import { SignUpPage } from '../pages/signup/SignUpPage'
 import { Homepage } from '../pages/homepage/Homepage'
 import { Menu } from '../pages/menu/Menu'
 import { ListIfOptions } from '../pages/listOfOptions/ListOfOptions'
+import Cart from '../pages/CartPage/Cart'
 
 export const Router = () => {
     return (
@@ -14,6 +15,7 @@ export const Router = () => {
                 <Route path='/signup' element={<SignUpPage />} />
                 <Route path='/menu' element={<Menu />} />
                 <Route path='/listofoptions' element={<ListIfOptions />} />
+                <Route path='/cart' element={<Cart />} />
             </Routes>
         </BrowserRouter>
     )

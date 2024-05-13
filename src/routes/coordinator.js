@@ -18,3 +18,7 @@ export const goToListOfOptionsPage = (navigator) => {
     navigator('/listofoptions')
 }
 
+export const goToCartPage = (navigator) => {
+    navigator('/cart')
+}
+

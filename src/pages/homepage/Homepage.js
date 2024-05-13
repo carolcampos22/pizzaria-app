@@ -25,7 +25,7 @@ export const Homepage = () => {
                 
             </div>
 
-            <h3 className="mr-5 text-5xl text-yellow-500">Acompanhamentos</h3>
+            <h3 className="mr-5 text-5xl text-yellow-500">Aperitivos</h3>
             <div className="flex items-center m-5   ">
                 
                 <div className="flex">

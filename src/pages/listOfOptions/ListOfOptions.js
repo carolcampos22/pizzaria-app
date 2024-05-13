@@ -27,7 +27,7 @@ export const ListIfOptions = () => {
           </div>
           <div className="option flex items-center cursor-pointer hover:text-yellow-500">
             <img src={fries} alt="Acompanhamentos" className="w-2/5 h-3/5 mr-12" />
-            <h2 className="text-3xl font-semibold">Acompanhamentos</h2>
+            <h2 className="text-3xl font-semibold">Aperitivos</h2>
           </div>
           <div className="option flex items-center cursor-pointer hover:text-blue-500">
             <img src={dessert} alt="Sobremesas" className="w-2/5 h-3/5 mr-12" />
