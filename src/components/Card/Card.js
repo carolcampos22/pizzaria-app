@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { useCart } from "../../context/CartContext";
 
 const PizzaCard = ({ product }) => {
+  const { addToCart } = useCart();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalQuantity, setModalQuantity] = useState(1);
-  const [modalSize, setModalSize] = useState()
+  const [modalSize, setModalSize] = useState("broto")
 
   const handleAddToCart = () => {
     setIsModalOpen(true);
@@ -14,6 +16,7 @@ const PizzaCard = ({ product }) => {
   };
 
   const handleModalConfirm = () => {
+    addToCart(product, modalQuantity, modalSize);
     setIsModalOpen(false);
   };
 

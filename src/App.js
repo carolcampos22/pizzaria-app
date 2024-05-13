@@ -3,16 +3,19 @@ import { Card } from './components/Card/Card';
 import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
 import { Navbar } from './components/Navbar/Navbar';
-import {Router} from './routes/router'
+import { Router } from './routes/router'
+import { CartProvider } from "./context/CartContext";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Navbar />
-      <Router />
-      <Footer />
-    </div>
+    <CartProvider>
+      <div className="App">
+        <Header />
+        <Navbar />
+        <Router />
+        <Footer />
+      </div>
+    </CartProvider>
   );
 }
 
