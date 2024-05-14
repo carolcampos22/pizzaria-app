@@ -11,7 +11,6 @@ function App() {
     <CartProvider>
       <div className="App">
         <Header />
-        <Navbar />
         <Router />
         <Footer />
       </div>
