@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Button } from "../../components/Button/Button"
 import img from "../../assets/logo.png"
 import { Form, LoginPageContainer } from "./styledSignUp"
+import { Link } from "react-router-dom"
 
 export const SignUpPage = () => {
 
@@ -22,7 +23,7 @@ export const SignUpPage = () => {
                 <input value={password} type="password" placeholder="Senha" onChange={(e) => setPassword(e.target.value)} />
                 <Button name="Cadastrar" />
                 <span>Já tem conta? Faça login!</span>
-                <Button name="Entrar" />
+                <Link className="bg-orange-500 flex justify-center items-center text-white w-[20vw] h-[7vh] text-2xl font-bold rounded-lg shadow-[8px_8px_8px_rgba(0,255,0,0.5)] transform transition duration-500 ease-in-out hover:bg-orange hover:scale-110 hover:shadow-[10px_10px_10px_rgba(0,255,0,0.2)]" to="/login">Entrar</Link>
             </Form>
         </LoginPageContainer>
     )
