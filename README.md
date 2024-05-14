@@ -54,3 +54,8 @@ A página inicial será aberta na porta localhost:3000.
 - Autenticação de usuário com Redux
 - Integrar atributos ARIA para melhorar a acessibilidade da aplicação, tornando-a mais amigável para usuários com deficiência.
 - Footer
+
+### Autora
+#### Carolina Mendes - Desenvolvedora Web
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=0E76A8)](https://www.linkedin.com/in/dev-carolina-mendes/)
