@@ -7,6 +7,26 @@ Aplicação de uma pizzaria onde é possível visualizar o cardápio e adicionar
 - JavaScript
 - Tailwind CSS
 
+### Como rodar este projeto
+É necessário ter o [Node](https://nodejs.org/en) instalado na sua máquina.
+1. Faça o clone deste repositório
+```bash
+git clone https://github.com/carolcampos22/pizzaria-app.git
+```
+2. Entre na pasta do projeto
+```bash
+cd pizzaria-app
+```
+3. Instale as dependências
+```bash
+npm install
+```
+4. Abra-o no navegador
+```bash
+npm start
+```
+A página inicial será aberta na porta localhost:3000.
+
 ### Layout
 1. Página inicial
 ![](./src/assets/prints/homepage.png)
