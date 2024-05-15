@@ -22,3 +22,7 @@ export const goToCartPage = (navigator) => {
     navigator('/cart')
 }
 
+export const goToCheckoutPage = (navigator) => {
+    navigator('/checkout')
+}
+
