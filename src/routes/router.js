@@ -6,6 +6,7 @@ import { Menu } from '../pages/menu/Menu'
 import { ListIfOptions } from '../pages/listOfOptions/ListOfOptions'
 import Cart from '../pages/CartPage/Cart'
 import { Navbar } from '../components/Navbar/Navbar'
+import { Checkout } from '../pages/Checkout/Checkout'
 
 
 export const Router = () => {
@@ -19,6 +20,7 @@ export const Router = () => {
         <Route path='/menu' element={<Menu />} />
         <Route path='/listofoptions' element={<ListIfOptions />} />
         <Route path='/cart' element={<Cart />} />
+        <Route path='/checkout' element={<Checkout />} />
       </Routes>
     </BrowserRouter>
   );

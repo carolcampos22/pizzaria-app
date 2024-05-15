@@ -21,7 +21,7 @@ const PizzaCard = ({ product }) => {
   };
 
   return (
-    <div className="bg-orange-500 text-white rounded-lg overflow-hidden shadow-lg mx-auto w-full h-128 min-w-128 min-h-128">
+    <div className=" bg-orange-500 text-white rounded-lg overflow-hidden shadow-lg mx-auto w-full h-128 min-w-128 min-h-128">
       <img className="w-full h-48 object-cover object-center" src={product.image} alt={product.name} />
       <div className="p-4">
         <h2 className="text-4xl font-bold mb-2">{product.name}</h2>
@@ -37,7 +37,13 @@ const PizzaCard = ({ product }) => {
           </ul>
         </div>
       </div>
-      <button onClick={handleAddToCart}>Adicionar ao carrinho</button>
+      <button
+        className="m-5 px-4 py-2 bg-green-900 text-white rounded-md text-xl 
+             shadow-md transform transition duration-500 
+             hover:bg-green-800 hover:shadow-lg hover:shadow-gray-900 hover:scale-105"
+        onClick={handleAddToCart}>
+        Adicionar ao carrinho
+      </button>
       {isModalOpen && (
         <div className="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 flex justify-center items-center">
           <div className="bg-black p-4 rounded-lg text-3xl border-2 border-blue-500">
