@@ -5,9 +5,12 @@ import pizza from "../../assets/pizza.jpg";
 import chef from "../../assets/chef.png";
 import { useNavigate } from "react-router-dom";
 import { goToMenuPage } from "../../routes/coordinator";
+import { useProtectedPage } from "../../hooks/useProtectedPages";
 
-export const ListIfOptions = () => {
+export const ListOfOptions = () => {
   const navigate = useNavigate();
+
+  useProtectedPage(navigate)
 
   return (
     <div className="bg-black text-white p-12">

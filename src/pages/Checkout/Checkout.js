@@ -1,7 +1,12 @@
 import logo from "../../assets/logo.png"
 import delivery from "../../assets/delivery-guy.png"
+import { useNavigate } from "react-router-dom"
+import { useProtectedPage } from "../../hooks/useProtectedPages"
 
 export const Checkout = () => {
+    const navigate = useNavigate()
+    useProtectedPage(navigate)
+    
     return (
         <div className="flex justify-around bg-black text-white min-h-[37vh]">
             <div className="mt-24 min-h-[58vh]">
