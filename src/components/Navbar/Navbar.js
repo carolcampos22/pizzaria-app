@@ -1,10 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from "../../assets/logo.png";
+import { useDispatch, useSelector } from "react-redux";
+import { logoutUser } from '../../redux/user/actions';
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
+
+  const { currentUser } = useSelector((rootReducer) => rootReducer.userReducer);
+  const dispatch = useDispatch();
+
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    dispatch(logoutUser());
+    navigate("/login");
+  };
 
   return (
     <nav className="bg-gray-800">
@@ -72,12 +84,15 @@ export const Navbar = () => {
               >
                 Página Inicial
               </Link>
-              <Link
-                to="/login"
+              <div
                 className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
               >
-                Fazer login
-              </Link>
+                {currentUser ? (
+                  <div onClick={handleLogout}>Sair</div>
+                ) : (
+                  <Link to="/login">Fazer login</Link>
+                )}
+              </div>
               <Link
                 to="/listofoptions"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
@@ -90,7 +105,6 @@ export const Navbar = () => {
               >
                 Carrinho
               </Link>
-              
             </div>
 
             {/* Profile dropdown */}
@@ -126,13 +140,13 @@ export const Navbar = () => {
                   >
                     Perfil
                   </Link>
-                  <Link
-                    to="/logout"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  <div
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer"
                     role="menuitem"
+                    onClick={handleLogout}
                   >
                     Sair
-                  </Link>
+                  </div>
                 </div>
               )}
             </div>
@@ -150,12 +164,21 @@ export const Navbar = () => {
             >
               Página Inicial
             </Link>
-            <Link
-              to="/login"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-            >
-              Fazer login
-            </Link>
+            {currentUser ? (
+              <div
+                className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium cursor-pointer"
+                onClick={handleLogout}
+              >
+                Sair
+              </div>
+            ) : (
+              <Link
+                to="/login"
+                className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              >
+                Fazer login
+              </Link>
+            )}
             <Link
               to="/listofoptions"
               className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
@@ -202,12 +225,12 @@ export const Navbar = () => {
                   >
                     Perfil
                   </Link>
-                  <Link
-                    to="/logout"
-                    className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  <div
+                    className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer"
+                    onClick={handleLogout}
                   >
                     Sair
-                  </Link>
+                  </div>
                 </div>
               )}
             </div>
@@ -217,7 +240,3 @@ export const Navbar = () => {
     </nav>
   );
 };
-
-
-
-

@@ -5,7 +5,7 @@ const PizzaCard = ({ product }) => {
   const { addToCart } = useCart();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalQuantity, setModalQuantity] = useState(1);
-  const [modalSize, setModalSize] = useState("broto")
+  const [modalSize, setModalSize] = useState("broto");
 
   const handleAddToCart = () => {
     setIsModalOpen(true);
@@ -16,12 +16,19 @@ const PizzaCard = ({ product }) => {
   };
 
   const handleModalConfirm = () => {
-    addToCart(product, modalQuantity, modalSize);
-    setIsModalOpen(false);
+    if (modalQuantity >= 1) {
+      addToCart(product, modalQuantity, modalSize);
+      setIsModalOpen(false);
+    }
+  };
+
+  const handleQuantityChange = (e) => {
+    const value = parseInt(e.target.value);
+    setModalQuantity(value >= 1 ? value : 1);
   };
 
   return (
-    <div className=" bg-orange-500 text-white rounded-lg overflow-hidden shadow-lg mx-auto w-full h-128 min-w-128 min-h-128">
+    <div className="bg-orange-500 text-white rounded-lg overflow-hidden shadow-lg mx-auto w-full h-128 min-w-128 min-h-128">
       <img className="w-full h-48 object-cover object-center" src={product.image} alt={product.name} />
       <div className="p-4">
         <h2 className="text-4xl font-bold mb-2">{product.name}</h2>
@@ -38,10 +45,9 @@ const PizzaCard = ({ product }) => {
         </div>
       </div>
       <button
-        className="m-5 px-4 py-2 bg-green-900 text-white rounded-md text-xl 
-             shadow-md transform transition duration-500 
-             hover:bg-green-800 hover:shadow-lg hover:shadow-gray-900 hover:scale-105"
-        onClick={handleAddToCart}>
+        className="m-5 px-4 py-2 bg-green-900 text-white rounded-md text-xl shadow-md transform transition duration-500 hover:bg-green-800 hover:shadow-lg hover:shadow-gray-900 hover:scale-105"
+        onClick={handleAddToCart}
+      >
         Adicionar ao carrinho
       </button>
       {isModalOpen && (
@@ -52,8 +58,9 @@ const PizzaCard = ({ product }) => {
               type="number"
               id="quantity"
               value={modalQuantity}
-              onChange={(e) => setModalQuantity(parseInt(e.target.value))}
+              onChange={handleQuantityChange}
               className="bg-black border-2 border-orange-500 text-white px-2 py-1 rounded-md mr-6 ml-2"
+              min="1"
             />
             <label htmlFor="size">Tamanho:</label>
             <select
@@ -82,7 +89,6 @@ const PizzaCard = ({ product }) => {
               Fechar
             </button>
           </div>
-
         </div>
       )}
     </div>
@@ -109,3 +115,4 @@ function tamanhoDaPizza(index) {
 }
 
 export default PizzaCard;
+

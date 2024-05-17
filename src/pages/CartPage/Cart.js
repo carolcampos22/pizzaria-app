@@ -3,6 +3,7 @@ import { useCart } from "../../context/CartContext";
 import img from "../../assets/chef-2.png";
 import { useNavigate } from "react-router-dom";
 import { goToCheckoutPage } from "../../routes/coordinator";
+import { useProtectedPage } from "../../hooks/useProtectedPages";
 
 const Cart = () => {
   const {
@@ -26,6 +27,8 @@ const Cart = () => {
   };
 
   const navigate = useNavigate()
+
+  useProtectedPage(navigate)
 
   return (
     <div className="bg-black w-full h-full flex">

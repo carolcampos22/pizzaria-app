@@ -46,11 +46,12 @@ A página inicial será aberta na porta localhost:3000.
 6. Carrinho de compras
 ![](./src/assets/prints/cart.png)
 
+6. Finalização da compra
+![](./src/assets/prints/checkout.png)
+
 ### Próximos passos
 - Página de outros produtos
-- Autenticação de usuário com Redux
 - Integrar atributos ARIA para melhorar a acessibilidade da aplicação, tornando-a mais amigável para usuários com deficiência.
-- Footer
 
 ### Autora
 #### Carolina Mendes - Desenvolvedora Web
