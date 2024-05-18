@@ -94,7 +94,7 @@ export const Navbar = () => {
                 )}
               </div>
               <Link
-                to="/listofoptions"
+                to="/menu"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
               >
                 Cardápio
@@ -108,7 +108,7 @@ export const Navbar = () => {
             </div>
 
             {/* Profile dropdown */}
-            <div className="relative ml-3">
+            {/* <div className="relative ml-3">
               <div>
                 <button
                   type="button"
@@ -149,7 +149,7 @@ export const Navbar = () => {
                   </div>
                 </div>
               )}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -180,7 +180,7 @@ export const Navbar = () => {
               </Link>
             )}
             <Link
-              to="/listofoptions"
+              to="/menu"
               className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
             >
               Cardápio
@@ -193,7 +193,7 @@ export const Navbar = () => {
             </Link>
             
             {/* Mobile Profile dropdown */}
-            <div className="border-t border-gray-700 pt-4">
+            {/* <div className="border-t border-gray-700 pt-4">
               <div className="flex items-center px-5">
                 <div className="flex-shrink-0">
                   <img
@@ -233,7 +233,7 @@ export const Navbar = () => {
                   </div>
                 </div>
               )}
-            </div>
+            </div> */}
           </div>
         </div>
       )}

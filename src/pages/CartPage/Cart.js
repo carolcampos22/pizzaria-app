@@ -2,7 +2,6 @@ import React from "react";
 import { useCart } from "../../context/CartContext";
 import img from "../../assets/chef-2.png";
 import { useNavigate } from "react-router-dom";
-import { goToCheckoutPage } from "../../routes/coordinator";
 import { useProtectedPage } from "../../hooks/useProtectedPages";
 
 const Cart = () => {
@@ -12,6 +11,8 @@ const Cart = () => {
     clearCart,
     updateCartItemQuantity,
   } = useCart();
+
+  const navigate = useNavigate()
 
   const totalPrice = cartItems.reduce(
     (total, item) => total + item.price * item.quantity,
@@ -26,7 +27,10 @@ const Cart = () => {
     updateCartItemQuantity(itemId, itemSize, -1);
   };
 
-  const navigate = useNavigate()
+  const handleFinishOrder = () => {
+    navigate("/checkout")
+    clearCart()
+  }
 
   useProtectedPage(navigate)
 
@@ -38,11 +42,12 @@ const Cart = () => {
           <p>Seu carrinho está vazio.</p>
         ) : (
           <div>
-            <ul>
+            <ul role="list">
               {cartItems.map((item) => (
                 <li
                   key={`${item.id}-${item.size}`}
                   className="flex justify-between items-center py-2 border-b"
+                  role="listitem"
                 >
                   <div>
                     <span className="font-bold">{item.name}</span> -{" "}
@@ -51,6 +56,7 @@ const Cart = () => {
                       onClick={() => handleDecrement(item.id, item.size)}
                       className="px-2 py-1 text-xs bg-orange-700 text-white rounded-md"
                       disabled={item.quantity <= 1}
+                      aria-label="Decrementar quantidade do item"
                     >
                       -
                     </button>
@@ -58,6 +64,7 @@ const Cart = () => {
                     <button
                       onClick={() => handleIncrement(item.id, item.size)}
                       className="ml-2 px-2 py-1 text-xs bg-blue-700 text-white rounded-md"
+                      aria-label="Incrementar quantidade do item"
                     >
                       +
                     </button>
@@ -67,6 +74,7 @@ const Cart = () => {
                     <button
                       onClick={() => removeFromCart(item.id, item.size)}
                       className="ml-2 px-2 py-1 text-xs text-white bg-red-500 rounded-md"
+                      aria-label="Remover item do carrinho"
                     >
                       Remover
                     </button>
@@ -81,16 +89,17 @@ const Cart = () => {
             <button
               onClick={clearCart}
               className="mt-4 px-4 py-2 bg-red-500 text-white rounded-md"
+              aria-label="Limpar carrinho"
             >
               Limpar Carrinho
             </button>
             <button
-              onClick={() => goToCheckoutPage(navigate)}
+              onClick={handleFinishOrder}
               className="mt-4 ml-2 px-4 py-2 bg-green-700 text-white rounded-md"
+              aria-label="Finalizar pedido"
             >
               Finalizar pedido
             </button>
-
           </div>
         )}
       </div>

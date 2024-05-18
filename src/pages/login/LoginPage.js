@@ -15,7 +15,7 @@ export const LoginPage = () => {
 
     useEffect(() => {
         if (currentUser) {
-            navigate("/"); 
+            navigate("/menu"); 
         }
     }, [currentUser, navigate]);
 
@@ -29,7 +29,7 @@ export const LoginPage = () => {
     };
 
     return (
-        <LoginPageContainer>
+        <LoginPageContainer role="form">
             <Form>
                 <div>
                     <img src={img} alt="Logo" />
@@ -41,16 +41,19 @@ export const LoginPage = () => {
                     type="email"
                     placeholder="E-mail"
                     onChange={(e) => setEmail(e.target.value)}
+                    aria-label="E-mail"
                 />
                 <input
                     value={password}
                     type="password"
                     placeholder="Senha"
                     onChange={(e) => setPassword(e.target.value)}
+                    aria-label="Senha"
                 />
                 <button
                     onClick={handleLogin}
                     className="flex justify-center items-center bg-orange-700 text-center text-white rounded-2text-center w-[20vw] h-[7vh] bg-darkorange text-whitesmoke text-xl font-bold rounded-lg shadow-[8px_8px_8px_rgba(0,255,0,0.5)] transform transition duration-500 ease-in-out hover:bg-orange hover:scale-110 hover:shadow-[10px_10px_10px_rgba(0,255,0,0.2)]"
+                    aria-label="Entrar"
                 >
                     Entrar
                 </button>
@@ -58,6 +61,7 @@ export const LoginPage = () => {
                 <Link
                     className="flex justify-center items-center bg-blue-700 text-center text-white rounded-2text-center w-[20vw] h-[7vh] bg-darkorange text-whitesmoke text-xl font-bold rounded-lg shadow-[8px_8px_8px_rgba(0,255,0,0.5)] transform transition duration-500 ease-in-out hover:bg-orange hover:scale-110 hover:shadow-[10px_10px_10px_rgba(0,255,0,0.2)]"
                     to="/signup"
+                    aria-label="Cadastrar"
                 >
                     Cadastrar
                 </Link>
@@ -65,3 +69,4 @@ export const LoginPage = () => {
         </LoginPageContainer>
     );
 };
+
