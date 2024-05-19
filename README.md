@@ -37,13 +37,10 @@ A página inicial será aberta na porta localhost:3000.
 3. Cadastro
 ![](./src/assets/prints/signup.png)
 
-4. Cardápio
-![](./src/assets/prints/menu.png)
-
-5. Menu de pizzas
+4. Menu de pizzas
 ![](./src/assets/prints/menu-pizzas.png)
 
-6. Carrinho de compras
+5. Carrinho de compras
 ![](./src/assets/prints/cart.png)
 
 6. Finalização da compra
