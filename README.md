@@ -51,7 +51,6 @@ A página inicial será aberta na porta localhost:3000.
 
 ### Próximos passos
 - Página de outros produtos
-- Integrar atributos ARIA para melhorar a acessibilidade da aplicação, tornando-a mais amigável para usuários com deficiência.
 
 ### Autora
 #### Carolina Mendes - Desenvolvedora Web
