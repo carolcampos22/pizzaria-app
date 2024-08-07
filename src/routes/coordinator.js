@@ -10,12 +10,24 @@ export const goToHomepage = (navigator) => {
     navigator('/')
 }
 
-export const goToMenuPage = (navigator) => {
-    navigator('/menu')
-}
-
 export const goToListOfOptionsPage = (navigator) => {
     navigator('/listofoptions')
+}
+
+export const goToPizzaMenuPage = (navigator) => {
+    navigator('/pizzas')
+}
+
+export const goToDrinkMenuPage = (navigator) => {
+    navigator('/bebidas')
+}
+
+export const goToDessertMenuPage = (navigator) => {
+    navigator('/sobremesas')
+}
+
+export const goToSnacksMenuPage = (navigator) => {
+    navigator('/aperitivos')
 }
 
 export const goToCartPage = (navigator) => {
@@ -25,4 +37,6 @@ export const goToCartPage = (navigator) => {
 export const goToCheckoutPage = (navigator) => {
     navigator('/checkout')
 }
+
+
 

@@ -5,7 +5,7 @@ import { MenuContainer } from './styledMenu';
 import { useNavigate } from 'react-router-dom';
 import { useProtectedPage } from '../../hooks/useProtectedPages';
 
-export const Menu = () => {
+export const PizzaMenu = () => {
   const navigate = useNavigate();
 
   useProtectedPage(navigate);
