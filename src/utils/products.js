@@ -111,6 +111,7 @@ export const products = [
     image: "https://claudia.abril.com.br/wp-content/uploads/2020/02/receita-pizza-de-camarao.jpg",
     ingredients: "Camarão, Molho de tomate, Mussarela e Catupiry"
   },
+
   {
     id: 17,
     name: "Chocolate com Morango",
@@ -118,6 +119,7 @@ export const products = [
     image: "https://oquetempracomer.com.br/wp-content/uploads/2022/02/pizza-chocolate-com-morango-capa.jpg",
     ingredients: "Chocolate, Chocolate ao leite, Morangos"
   },
+
   {
     id: 18,
     name: "Chocolate Branco com M&M's",
@@ -125,6 +127,7 @@ export const products = [
     image: "https://forneriaoriginal.com/wp-content/uploads/2020/04/45_chocolate-mm-branco1.jpg",
     ingredients: "Chocolate branco, M&M's"
   },
+
   {
     id: 19,
     name: "Romeu e Julieta",
@@ -132,6 +135,7 @@ export const products = [
     image: "https://oquetempracomer.com.br/wp-content/uploads/2022/02/pizza-de-romeu-e-julieta.jpg",
     ingredients: "Goiabada, Queijo Minas"
   },
+
   {
     id: 20,
     name: "Banana com Canela",
@@ -139,6 +143,7 @@ export const products = [
     image: "https://blog.novasafra.com.br/wp-content/uploads/2016/01/pizza-banana-com-canela-imgp-b1-5081bfc45c04ff4b1a000011-5081cf7a5c04ffd317000709-cdce03bd3d7b9d9ca2125193bedbb96a-780x450.jpeg",
     ingredients: "Banana, Canela"
   },
+
   {
     id: 21,
     name: "Chocolate",
@@ -146,5 +151,177 @@ export const products = [
     image: "https://www.designi.com.br/images/preview/10072860.jpg",
     ingredients: "Chocolate"
   },
+
 ];
+
+export const dessertProducts = [
+  
+  {
+    id: 22,
+    name: "Bolo de Chocolate com M&M's e KitKat",
+    image: "https://images.pexels.com/photos/19493770/pexels-photo-19493770/free-photo-of-colorida-cheio-de-cor-branco-leite.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    price: 7.99
+  },
+
+  {
+    id: 23,
+    name: "Bolo Brigadeiro",
+    image: "https://cdn-productdbimages.barry-callebaut.com/sites/bc_productdb_images/files/styles/mdp_web_gm_chocac-detail/public/externals/f7537efd25f981345a3e53e9b767cd43.jpg?itok=0M0XTW2s",
+    price: 6.99
+  },
+
+  {
+    id: 24,
+    name: "Bolo de Chocolate com Recheio de Baunilha",
+    image: "https://images.pexels.com/photos/1854652/pexels-photo-1854652.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    price: 4.99
+  },
+
+  {
+    id: 25,
+    name: "Brownie de Chocolate",
+    image: "https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    price: 7.99
+  },
+
+  {
+    id: 25,
+    name: "Brownie de Chocolate com Nozes",
+    image: "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    price: 8.99
+  },
+
+  {
+    id: 26,
+    name: "Brownie de Chocolate Branco",
+    image: "https://images.pexels.com/photos/2864545/pexels-photo-2864545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    price: 8.99
+  },
+
+  {
+    id: 27,
+    name: "Brownie de Chocolate com Sorvete de Baunilha e Calda de Chocolate",
+    image: "https://images.pexels.com/photos/27359377/pexels-photo-27359377/free-photo-of-placa-prato-doce-bala.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    price: 12.99
+  },
+
+  {
+    id: 28,
+    name: "Brownie de Chocolate com Sorvete de Baunilha",
+    image: "https://images.pexels.com/photos/10281094/pexels-photo-10281094.jpeg",
+    price: 10.99
+  },
+
+  {
+    id: 29,
+    name: "Brownie de Chocolate com Recheio de Baunilha e Sorvete de Casquinha",
+    image: "https://images.pexels.com/photos/9320908/pexels-photo-9320908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    price: 13.99
+  },
+
+  {
+    id: 30,
+    name: "Brownie de Doce de Leite com Sorvete de Baunilha e Cobertura de Doce de Leite",
+    image: "https://images.pexels.com/photos/9320908/pexels-photo-9320908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    price: 11.99
+  },
+
+  {
+    id: 31,
+    name: "Bolo de Coco",
+    image: "https://www.xreceitas.com.br/wp-content/uploads/2024/01/receita-de-bolo-de-coco-gelado.webp",
+    price: 4.99
+  },
+
+  {
+    id: 32,
+    name: "Bolo de Morango",
+    image: "https://s2-receitas.glbimg.com/yMB7rtVMoW9WyF2KDR4zkU-G92w=/0x0:1366x768/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2022/N/E/OEOJRtSa6pywDe993Gfg/bolo-de-morango-com-chantilly-receita-2.jpg",
+    price: 4.99
+  },
+
+  {
+    id: 33,
+    name: "Bolo Floresta Negra",
+    image: "https://www.receiteria.com.br/wp-content/uploads/bolo-floresta-negra-com-recheio-de-nata.jpg",
+    price: 4.99
+  },
+
+
+]
+
+export const drinksProducts = [
+  {
+    id: 34,
+    name: "Coca-cola 2l",
+    image: "https://obahortifruti.vtexassets.com/arquivos/ids/5188035-800-450?v=638329593866800000&width=800&height=450&aspect=true",
+    price: 8.99
+  },
+
+  {
+    id: 35,
+    name: "Guaraná Antarctica 2l",
+    image: "https://imgs.extra.com.br/1505923720/1xg.jpg",
+    price: 6.99
+  },
+
+  {
+    id: 36,
+    name: "Ice Tea Leão Sabor Limão 1,5l",
+    image: "https://obahortifruti.vtexassets.com/arquivos/ids/4253053/Cha-Ice-Tea-Limao-Matte-Leao-15-Litro.jpg?v=638144114280030000",
+    price: 6.99
+  },
+
+  {
+    id: 37,
+    name: "Ice Tea Leão Sabor Pêssego 1,5l",
+    image: "https://mercantilatacado.vtexassets.com/arquivos/ids/180612/654a7bdadfdc1db66c300fbe.jpg?v=638349769900030000",
+    price: 6.99
+  },
+
+  {
+    id: 38,
+    name: "Sprite 2l",
+    image: "https://uploads.consultaremedios.com.br/product_variation_images/full/6fedbedbecad5e8077cb7e2bfe6942eb4e3eee4b.jpg?1508182797",
+    price: 7.99
+  },
+
+  {
+    id: 39,
+    name: "Fanta Uva, Laranja ou Maracujá 2l",
+    image: "https://changlee.com.br/wp-content/uploads/2016/09/Garrafas-familia-com-Maracuja.jpg",
+    price: 7.99
+  },
+]
+
+export const snacksProducts = [
+  {
+    id: 40,
+    name: "Porção de Batatas Fritas",
+    image: "https://www.cidadeoferta.com.br/storage/offers/9295-chopp-club-grill-londrina-porcao-fritas-mandioca-polenta-imagem-4.jpg",
+    price: 5.99
+  },
+
+  {
+    id: 41,
+    name: "Porção de Salgadinhos Diversos (10 unidades por porção)",
+    image: "https://deliciaslopessalgados.seucontato.com/imagens/5xo54gwku7kswss4s.jpg",
+    price: 7.99
+  },
+
+  {
+    id: 42,
+    name: "Porção de Nuggets de Frango (6 unidades por porção. Acompanha molho.)",
+    image: "https://sachefmio.blob.core.windows.net/fotos/nuggets-recheado-c-queijo-7-un-134021.jpg",
+    price: 8.99
+  },
+
+  {
+    id: 43,
+    name: "Porção de Anéis de Cebola (6 unidades por porção.)",
+    image: "https://alloydeliveryimages.s3.sa-east-1.amazonaws.com/item_images/7525/63e673316e44883854.webp",
+    price: 5.99
+  },
+
+]
 

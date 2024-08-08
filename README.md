@@ -40,14 +40,18 @@ A página inicial será aberta na porta localhost:3000.
 4. Menu de pizzas
 ![](./src/assets/prints/menu-pizzas.png)
 
-5. Carrinho de compras
+5. Menu de Sobremesas
+![](./src/assets/prints/dessert-menu-page.png)
+
+6. Carrinho de compras
 ![](./src/assets/prints/cart.png)
 
-6. Finalização da compra
+7. Finalização da compra
 ![](./src/assets/prints/checkout.png)
 
 ### Próximos passos
-- Página de outros produtos
+- Adicionar a funcionalidade de adicionar produto ao carrinho na página de Sobremesas
+- Páginas de Bebidas e Aperitivos
 
 ### Autora
 #### Carolina Mendes - Desenvolvedora Web
