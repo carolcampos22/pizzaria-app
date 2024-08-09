@@ -93,10 +93,12 @@ const Cart = () => {
                     R${(item.price * item.quantity).toFixed(2)}
                     <button
                       onClick={() => {
-                        if (cartItems.some(item => item.id === item.id && item.size === item.size)) {
+                        if (cartItems.some(cartItem => cartItem.id === item.id && cartItem.size === item.size)) {
                           removeFromCart(item.id, item.size);
-                        } else {
-                          removeOtherProductsFromCart(item.id, item.size);
+                        }
+
+                        if (otherProductsCartItems.some(cartItem => cartItem.id === item.id)) {
+                          removeOtherProductsFromCart(item.id)
                         }
                       }}
                       className="ml-2 px-2 py-1 text-xs text-white bg-red-500 rounded-md"
