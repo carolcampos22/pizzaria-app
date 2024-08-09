@@ -21,7 +21,7 @@ const PizzaCard = ({ product }) => {
       addToCart(product, modalQuantity, modalSize);
       setIsModalOpen(false);
     }
-  };
+  }; 
 
   const handleQuantityChange = (e) => {
     const value = parseInt(e.target.value);

@@ -14,15 +14,5 @@ export const DessertsMenu = () => {
           ))}
         </MenuContainer>
       );
-    // return (
-    //     <div>
-    //         <h1>Aqui serão listadas as sobremesas</h1>
-    //         {dessertProducts.map((product) => (
-    //             <div>
-    //                 {<li>{product.name}</li>}
-    //                 <img src={product.image} />
-    //             </div>
-    //         ))}
-    //     </div>
-    // )
+    
 }
