@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../../components/Card/Card';
+import PizzaCard from '../../components/PizzaCard/PizzaCard';
 import { products } from '../../utils/products';
 import { MenuContainer } from './styledMenu';
 import { useNavigate } from 'react-router-dom';
@@ -16,7 +16,7 @@ export const PizzaMenu = () => {
       role="menu"
     >
       {products.map((product) => (
-        <Card key={product.id} product={product} role="menuitem" />
+        <PizzaCard key={product.id} product={product} role="menuitem" />
       ))}
     </MenuContainer>
   );

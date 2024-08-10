@@ -6,6 +6,7 @@ Aplicação de uma pizzaria onde é possível visualizar o cardápio e adicionar
 - React.js
 - JavaScript
 - Tailwind CSS
+- Styled components
 
 ### Como rodar este projeto
 É necessário ter o [Node](https://nodejs.org/en) instalado na sua máquina.
@@ -60,6 +61,10 @@ A página inicial será aberta na porta localhost:3000.
 
 ### Site
 Você pode acessar o site [neste link](https://pizzaria-app-seven.vercel.app/).
+
+### Próximos passos
+- Profile na barra de navegação
+- Testes unitários com Jest
 
 ### Autora
 #### Carolina Mendes - Desenvolvedora Web

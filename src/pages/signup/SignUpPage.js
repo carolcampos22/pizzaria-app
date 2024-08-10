@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import { Button } from "../../components/Button/Button"
 import img from "../../assets/logo.png"
 import { Form, LoginPageContainer } from "./styledSignUp"
 import { Link, useNavigate } from "react-router-dom"

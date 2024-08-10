@@ -2,7 +2,7 @@ import { useState } from "react";
 import FocusTrap from "focus-trap-react";
 import { useOtherProductsCart } from "../../context/OtherProductsCartContext";
 
-const DessertCard = ({ product }) => {
+const OtherProductsCard = ({ product }) => {
     const { addOtherProductsToCart } = useOtherProductsCart()
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [modalQuantity, setModalQuantity] = useState(1)
@@ -86,4 +86,4 @@ const DessertCard = ({ product }) => {
     );
 }
 
-export default DessertCard
+export default OtherProductsCard

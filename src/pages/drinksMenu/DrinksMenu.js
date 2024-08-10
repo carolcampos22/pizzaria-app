@@ -1,4 +1,4 @@
-import DessertCard from "../../components/DessertCard/DessertCard";
+import OtherProductsCard from "../../components/OtherProductsCard/OtherProductsCard";
 import { drinksProducts } from "../../utils/products"
 import { MenuContainer } from "../pizzaMenu/styledMenu";
 
@@ -10,7 +10,7 @@ export const DrinksMenu = () => {
           role="menu"
         >
           {drinksProducts.map((product) => (
-            <DessertCard key={product.id} product={product} role="menuitem" />
+            <OtherProductsCard key={product.id} product={product} role="menuitem" />
           ))}
         </MenuContainer>
       );
