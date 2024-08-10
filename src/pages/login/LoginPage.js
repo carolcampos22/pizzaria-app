@@ -15,7 +15,7 @@ export const LoginPage = () => {
 
     useEffect(() => {
         if (currentUser) {
-            navigate("/menu"); 
+            navigate("/listofoptions"); 
         }
     }, [currentUser, navigate]);
 

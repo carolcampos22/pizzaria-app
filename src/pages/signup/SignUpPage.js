@@ -18,7 +18,7 @@ export const SignUpPage = () => {
 
     useEffect(() => {
         if (currentUser) {
-            navigate("/"); 
+            navigate("/listofoptions"); 
         }
     }, [currentUser, navigate]);
 

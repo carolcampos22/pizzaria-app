@@ -185,66 +185,80 @@ export const dessertProducts = [
   },
 
   {
-    id: 25,
+    id: 26,
     name: "Brownie de Chocolate com Nozes",
     image: "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     price: 8.99
   },
 
   {
-    id: 26,
+    id: 27,
     name: "Brownie de Chocolate Branco",
     image: "https://images.pexels.com/photos/2864545/pexels-photo-2864545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     price: 8.99
   },
 
   {
-    id: 27,
+    id: 28,
     name: "Brownie de Chocolate com Sorvete de Baunilha e Calda de Chocolate",
     image: "https://images.pexels.com/photos/27359377/pexels-photo-27359377/free-photo-of-placa-prato-doce-bala.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     price: 12.99
   },
 
   {
-    id: 28,
+    id: 29,
     name: "Brownie de Chocolate com Sorvete de Baunilha",
     image: "https://images.pexels.com/photos/10281094/pexels-photo-10281094.jpeg",
     price: 10.99
   },
 
   {
-    id: 29,
+    id: 30,
     name: "Brownie de Chocolate com Recheio de Baunilha e Sorvete de Casquinha",
     image: "https://images.pexels.com/photos/9320908/pexels-photo-9320908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     price: 13.99
   },
 
   {
-    id: 30,
+    id: 31,
     name: "Brownie de Doce de Leite com Sorvete de Baunilha e Cobertura de Doce de Leite",
-    image: "https://images.pexels.com/photos/9320908/pexels-photo-9320908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ZiIZYM0BboWn71qpbviNb1GZzHiuWLZOqQ&s",
     price: 11.99
   },
 
   {
-    id: 31,
+    id: 32,
     name: "Bolo de Coco",
     image: "https://www.xreceitas.com.br/wp-content/uploads/2024/01/receita-de-bolo-de-coco-gelado.webp",
     price: 4.99
   },
 
   {
-    id: 32,
+    id: 33,
     name: "Bolo de Morango",
     image: "https://s2-receitas.glbimg.com/yMB7rtVMoW9WyF2KDR4zkU-G92w=/0x0:1366x768/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2022/N/E/OEOJRtSa6pywDe993Gfg/bolo-de-morango-com-chantilly-receita-2.jpg",
     price: 4.99
   },
 
   {
-    id: 33,
-    name: "Bolo Floresta Negra",
-    image: "https://www.receiteria.com.br/wp-content/uploads/bolo-floresta-negra-com-recheio-de-nata.jpg",
+    id: 34,
+    name: "Mousse de Coco",
+    image: "https://vocegastro.com.br/app/uploads/2023/05/mousse-de-coco.png",
     price: 4.99
+  },
+
+  {
+    id: 35,
+    name: "Mousse de Maracujá com Chocolate",
+    image: "https://guiadacozinha.com.br/wp-content/uploads/2019/10/mousse-maracuja-chocolate-copinho.jpg",
+    price: 5.99
+  },
+
+  {
+    id: 36,
+    name: "Mousse de Morango",
+    image: "https://receitasdepesos.com.br/wp-content/uploads/2024/06/470390-1.jpg",
+    price: 5.99
   },
 
 
@@ -252,75 +266,89 @@ export const dessertProducts = [
 
 export const drinksProducts = [
   {
-    id: 34,
+    id: 37,
     name: "Coca-cola 2l",
     image: "https://obahortifruti.vtexassets.com/arquivos/ids/5188035-800-450?v=638329593866800000&width=800&height=450&aspect=true",
     price: 8.99
   },
 
   {
-    id: 35,
+    id: 38,
     name: "Guaraná Antarctica 2l",
     image: "https://imgs.extra.com.br/1505923720/1xg.jpg",
     price: 6.99
   },
 
   {
-    id: 36,
+    id: 39,
     name: "Ice Tea Leão Sabor Limão 1,5l",
     image: "https://obahortifruti.vtexassets.com/arquivos/ids/4253053/Cha-Ice-Tea-Limao-Matte-Leao-15-Litro.jpg?v=638144114280030000",
     price: 6.99
   },
 
   {
-    id: 37,
+    id: 40,
     name: "Ice Tea Leão Sabor Pêssego 1,5l",
     image: "https://mercantilatacado.vtexassets.com/arquivos/ids/180612/654a7bdadfdc1db66c300fbe.jpg?v=638349769900030000",
     price: 6.99
   },
 
   {
-    id: 38,
+    id: 41,
     name: "Sprite 2l",
     image: "https://uploads.consultaremedios.com.br/product_variation_images/full/6fedbedbecad5e8077cb7e2bfe6942eb4e3eee4b.jpg?1508182797",
     price: 7.99
   },
 
   {
-    id: 39,
-    name: "Fanta Uva, Laranja ou Maracujá 2l",
-    image: "https://changlee.com.br/wp-content/uploads/2016/09/Garrafas-familia-com-Maracuja.jpg",
+    id: 42,
+    name: "Fanta Uva 2l",
+    image: "https://paesnovorio.com.br/web/image/product.template/565/image_1024?unique=dcc77da",
     price: 7.99
   },
 ]
 
 export const snacksProducts = [
   {
-    id: 40,
+    id: 43,
     name: "Porção de Batatas Fritas",
     image: "https://www.cidadeoferta.com.br/storage/offers/9295-chopp-club-grill-londrina-porcao-fritas-mandioca-polenta-imagem-4.jpg",
     price: 5.99
   },
 
   {
-    id: 41,
+    id: 44,
     name: "Porção de Salgadinhos Diversos (10 unidades por porção)",
     image: "https://deliciaslopessalgados.seucontato.com/imagens/5xo54gwku7kswss4s.jpg",
     price: 7.99
   },
 
   {
-    id: 42,
+    id: 45,
     name: "Porção de Nuggets de Frango (6 unidades por porção. Acompanha molho.)",
     image: "https://sachefmio.blob.core.windows.net/fotos/nuggets-recheado-c-queijo-7-un-134021.jpg",
     price: 8.99
   },
 
   {
-    id: 43,
+    id: 46,
     name: "Porção de Anéis de Cebola (6 unidades por porção.)",
     image: "https://alloydeliveryimages.s3.sa-east-1.amazonaws.com/item_images/7525/63e673316e44883854.webp",
     price: 5.99
+  },
+
+  {
+    id: 47,
+    name: "Porção de Aipim Frito",
+    image: "https://receitason.com/wp-content/uploads/2023/01/Mandioca-frita-super-crocante.jpg",
+    price: 3.99
+  },
+
+  {
+    id: 48,
+    name: "Frango a Passarinho (serve 2 pessoas)",
+    image: "https://i.ytimg.com/vi/aFUdE8cX7AQ/maxresdefault.jpg",
+    price: 12.99
   },
 
 ]
