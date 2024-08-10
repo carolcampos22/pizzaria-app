@@ -34,7 +34,7 @@ const Cart = () => {
     if (cartItems.some(item => item.id === itemId && item.size === itemSize)) {
       updateCartItemQuantity(itemId, itemSize, 1);
     } else {
-      updateCartItemQuantityOtherProducts(itemId, itemSize, 1);
+      updateCartItemQuantityOtherProducts(itemId, 1);
     }
   };
 
@@ -42,7 +42,7 @@ const Cart = () => {
     if (cartItems.some(item => item.id === itemId && item.size === itemSize)) {
       updateCartItemQuantity(itemId, itemSize, -1);
     } else {
-      updateCartItemQuantityOtherProducts(itemId, itemSize, -1);
+      updateCartItemQuantityOtherProducts(itemId, -1);
     }
   };
 
