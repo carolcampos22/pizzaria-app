@@ -57,7 +57,7 @@ A página inicial será aberta na porta localhost:3000.
 ![](./src/assets/prints/cart.png)
 
 10. Finalização da compra
-![](./src/assets/prints/checkout.png)
+![](./src/assets/prints/checkout-page.png)
 
 ### Site
 Você pode acessar o site [neste link](https://pizzaria-app-seven.vercel.app/).
