@@ -28,30 +28,38 @@ npm start
 A página inicial será aberta na porta localhost:3000.
 
 ### Layout
-1. Página inicial
-![](./src/assets/prints/homepage.png)
+1. Header
+![](./src/assets/prints/header.png)
 
-2. Login
+2. Página inicial
+![](./src/assets/prints/home.png)
+
+3. Login
 ![](./src/assets/prints/login.png)
 
-3. Cadastro
+4. Cadastro
 ![](./src/assets/prints/signup.png)
 
-4. Menu de pizzas
+5. Menu de pizzas
 ![](./src/assets/prints/menu-pizzas.png)
 
-5. Menu de Sobremesas
+6. Menu de Sobremesas
 ![](./src/assets/prints/dessert-menu-page.png)
 
-6. Carrinho de compras
+7. Menu de Aperitivos
+![](./src/assets/prints/snacks-menu.png)
+
+8. Menu de Bebidas
+![](./src/assets/prints/drinks-menu.png)
+
+9. Carrinho de compras
 ![](./src/assets/prints/cart.png)
 
-7. Finalização da compra
+10. Finalização da compra
 ![](./src/assets/prints/checkout.png)
 
-### Próximos passos
-- Adicionar a funcionalidade de adicionar produto ao carrinho na página de Sobremesas
-- Páginas de Bebidas e Aperitivos
+### Site
+Você pode acessar o site [neste link](https://pizzaria-app-seven.vercel.app/).
 
 ### Autora
 #### Carolina Mendes - Desenvolvedora Web
